@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bromono Twitch Streamer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/b55d11ffa3.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div id="site-container">
+
+        
+        <header id="header">
+            
+            <nav id="nav">
+                    <div id="navbar-flex">
+                        <h1 id="nav-title">Bromono</h1>
+
+                        <ul id="menu1">
+                            <li id="About">About</li>
+                            <li id="Reviews">Reviews</li>
+                            <li id="Contact">Contact</li>
+                        </ul>
+                        <!--Arrow For menu1 OBSOLETE BECAUSE OF LI ANIMATION
+                        <img class="arrow1" id="arrow1" src="assets/arrow.png" alt="" width="10px">
+                        <img class="arrow2" id="arrow2" src="assets/arrow.png" alt="" width="10px">
+                        -->
+                    </div>
+                   <h2>Video Game Reviews and Livestreams</h2>  
+            </nav>
+            
+        </header>
+        <main>
+            
+            <div id="jumbotron">
+                <div id="slider-container">
+                    <div id="img-slider">
+                        <div class="slider">
+                            <div class="slides">
+                                <div class="slide">
+                                    <img class="sliderimg" src="assets/spaceinvaders.jpg" alt="Space Invaders img courtesy of pixabay.com">
+                                </div>    
+                                <div class="slide">
+                                    <img class="sliderimg" src="assets/pic2.png" alt="img courtesy of pixabay.com">
+                                </div>    
+                                <div class="slide">
+                                    <img class="sliderimg" src="assets/pic3.png" alt="img courtesy of pixabay.com">
+                                </div>    
+                                <div class="slide">
+                                    <img class="sliderimg" src="assets/pic4.jpg" alt="img courtesy of pixabay.com">
+                                </div>    
+                            </div>
+                        </div>
+                        <ul id="menu2">
+                            <li id="prev">Previous</li>
+                            <li id="next">Next</li>
+                        </ul> 
+                    </div>
+   
+                    <div id="text-slider">
+                          <!--Arrow For menu1-->
+                        <div class="txtslider">
+                            <div class="txtslides">
+                                <div class="txtslide">
+                                    <h4>Space Invaders[a] is a 1978 shoot 'em up arcade game developed by Tomohiro Nishikado. 
+                                        It was manufactured and sold by Taito in Japan, and licensed by the Midway division of Bally for overseas distribution. 
+                                    </h4> 
+                                        <div class="read-more-btn"> 
+                                            <a href="#">Read More</a> 
+                                        </div>
+                                </div>
+                                <div class="txtslide">
+                                    <h4>Extraterrestrial life is hypothetical life which may occur outside Earth and which did not originate on Earth. 
+                                        Such life might range from simple prokaryotes (or comparable life forms) to intelligent beings and even sapient beings 
+                                    </h4> 
+                                        <div class="read-more-btn"> 
+                                            <a href="#">Read More</a> 
+                                        </div>
+                                </div>
+                                <div class="txtslide">
+                                    <h4>Space Invaders[a] is a 1978 shoot 'em up arcade game developed by Tomohiro Nishikado. 
+                                        It was manufactured and sold by Taito in Japan, and licensed by the Midway division of Bally for overseas distribution. 
+                                    </h4> 
+                                        <div class="read-more-btn"> 
+                                            <a href="#">Read More</a> 
+                                        </div>
+                                </div>
+                                <div class="txtslide">
+                                    <h4>Extraterrestrial life is hypothetical life which may occur outside Earth and which did not originate on Earth. 
+                                        Such life might range from simple prokaryotes (or comparable life forms) to intelligent beings and even sapient beings 
+                                    </h4> 
+                                        <div class="read-more-btn"> 
+                                            <a href="#">Read More</a> 
+                                        </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    
+                      
+                       
+                    </div>
+                </div>
+            
+               
+            </div>
+        
+        <div id="box-wrapper">
+            <div id="box-container">
+                <div class="box" id="box1">
+                    <h2>Streams</h2>
+                    <i class="fab fa-twitch fa-7x"></i>
+                </div>
+                <div class="box" id="box2">
+                    <h2>Videos</h2>
+                    <i class="fas fa-video fa-7x"></i>
+                </div>
+                <div class="box" id="box3">
+                    <h2>Game Reviews</h2>
+                    <i class="fas fa-gamepad fa-7x"></i>
+                </div>
+            </div>
+        </div>     
+            <div class="socialbox"><i class="fab fa-facebook"></i></div>
+            <div class="socialbox" id="sbox2"><i class="fab fa-twitter"></i></div>
+            <div class="socialbox" id="sbox3"><i class="fab fa-instagram"></i></div>
+            <img id="buildingNear" src="assets/nearbuilding.png" alt="Buildings that are nearby">
+        </main>
+    </div>
+    <aside>
+        <div id="featured-vid">
+            <div id="truck"><img src="assets/v-truck.png" alt="a truck from the open source game dev kit warped city"></div>
+            
+
+            <div id="overlap"></div>
+            <div id="bike"><img src="assets/v-yellow.png" alt="a jetbike from the open source game dev kit warped city"></div>
+            <div id="featured-vid-title">
+               
+                <h2>Featured Video</h2>
+                <img id="comet" src="assets/8bitcomet.png" alt="8 bit comet">
+                
+               
+                
+                <div id="video-player">
+                    <video id="realVid" controls width="800">
+                    
+                        <source src="#"   type="video/mp4">
+                    </video>   
+                    
+                </div>
+              <div id="button-holder">
+                <div id="vidbox-flex">
+                    <div class="vidbox" id="vid-play"> ▶ </div>
+                    <div class="vidbox" id="vid-pause"> || </div>
+                </div>    
+              </div>
+              </div>
+            <footer id="footer">Copyright 2021 - Eric Wickham</footer>
+
+        </div>
+
+    </aside>
+    <!--FIREWORKS HTML-->
+    <div class="firework" id="sparks">
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+    </div>
+
+
+    <script src="js/menuarrow.js"></script>
+    <script src="js/imgslider.js"></script>
+    <script src="js/sparks.js"></script>
+    <script src="js/vidcontrols.js"></script>
+</body>
+</html>
+
