@@ -46,7 +46,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    width: 60%;
+    position: relative;
+    top: 30px;
 }
 
 #navbar-flex {
@@ -67,25 +69,26 @@ img {
 li:hover {
     list-style-image: url("../assets/smlarrow.png");
     text-decoration: inherit;
+    cursor: pointer;
 }
 
-#menu1 li:hover {
-    list-style-image: url("../assets/smlarrow.png");
-    text-decoration: inherit;
-}
+
 
 #menu1 {
     display: inline;
     list-style-type: none;
 }
+
 #menu1 li {
-float: right;
-margin-left: 20px;    
+    float: right;
+    margin-left: 20px;    
 }
 
     
 
 #jumbotron {
+    position:relative;
+    z-index: 10;
     width: 1000px;
     margin: 30px auto;
     border: 2px solid white;
@@ -96,6 +99,7 @@ margin-left: 20px;
 
 #slider-container{
     display: flex;
+
 }
 
 #img-slider{
@@ -139,6 +143,8 @@ margin-left: 20px;
 
 .txtslides {
     height: 1200px;
+    margin-bottom: 0;
+
     
 }
 
@@ -181,6 +187,8 @@ a {
 
 /* 3 box */
 #box-wrapper{
+    position: relative;
+    top: 100px;
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -224,12 +232,15 @@ a {
     justify-content: center;
 }
 
+
+
 /*SOCIAL BOX*/
 
 .socialbox{
     border: 2px solid white;
-    position: fixed;
-    right: 0;
+    position: sticky;
+    left: 100%;
+    max-width: 40px;
     top: 200px;
     border-radius: 10px;
     justify-content: right;
@@ -237,6 +248,8 @@ a {
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
     transition: 0.3s;
+    margin-bottom: 5px;
+    z-index: 20;
 }
 
 .socialbox:hover {
@@ -378,22 +391,53 @@ video::-webkit-media-controls {
 
 /*parallax */
 
+
+#building-img-holder{
+    position: relative;
+    bottom: 300px;
+}
+
 #buildingNear {
     max-width: 100%;
-    z-index: 1;
+    z-index: 0;
     position: relative;
     bottom: 150px;
 }
 
+#building-div {
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+    height: 600px;
+    background-color: black;
+    z-index: 10;
+}
+
+#youtube-vid-div {
+    position: absolute;
+    z-index: 20;
+
+    left: 50%; 
+    transform: translate(-50%, -30%);
+    
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 560px;
+    height: 315px;
+}
 
 /*footer*/
 
 #footer {
     position: relative;
+    z-index: 14;
     background-color: black;
     color: white;
     height: 100px;
-    padding: 100px;
+    text-align: center;
 }
 
 /* menu arrow 1*/
@@ -581,6 +625,8 @@ video::-webkit-media-controls {
     position: relative;
     bottom: 300px;
 }
+
+
 
 
 /* MEDIA QUERIES */

@@ -1,8 +1,13 @@
 jQuery(document).ready(function () {
 
     
-    var marginValue= 0;
-    var txtMarginValue=0;
+    var marginValue = 0;
+    var txtMarginValue = 0;
+
+    $('#slide1').show("slow");
+    $('#slide2').hide();
+    $('#slide3').hide();
+    $('#slide4').hide();
 
     // PREVIOUS
     $('#prev').click(
@@ -12,12 +17,48 @@ jQuery(document).ready(function () {
             }else if (marginValue >= 2400) {
                 console.log(marginValue)
             }else {
-
+                
                 marginValue+=600
+                marginValue = Math.round(marginValue/100)*100;
+                console.log(marginValue);
+                
                 $('.slides').animate({'margin-left' : marginValue + "px"})
-                console.log('click')
+                
+                /*
                 txtMarginValue += 300
+                txtMarginValue = Math.round(txtMarginValue/100)*100;
+
                 $('.txtslides').animate({'margin-top' : txtMarginValue + 'px'})
+                */
+                switch(marginValue) {
+                    case 0:
+                        $('#slide1').show("slow");
+                        $('#slide2').hide("fast");
+                        $('#slide3').hide("fast");
+                        $('#slide4').hide("fast");
+                        break;
+                    case -600:
+                        $('#slide2').show("slow");
+                        $('#slide1').hide("fast");
+                        $('#slide3').hide("fast");
+                        $('#slide4').hide("fast");
+                        break;
+                    case -1200:
+                        $('#slide3').show("slow");
+                        $('#slide1').hide("fast");
+                        $('#slide2').hide("fast");
+                        $('#slide4').hide("fast");
+                        break;
+                        
+                    case -1800:
+                        $('#slide4').show("slow");
+                        $('#slide1').hide("fast");
+                        $('#slide2').hide("fast");
+                        $('#slide3').hide("fast");
+                        break;
+
+                }
+
             }
         }
     );
@@ -32,11 +73,38 @@ jQuery(document).ready(function () {
                 console.log(marginValue)
             }else {
                 marginValue-= 600
-                //$('.sliderimg').attr("src", "assets/pic" +(imgValue+1)+".jpg");
                 $('.slides').animate({'margin-left' : marginValue + "px"})
-                console.log('click')
-                txtMarginValue -= 299
+                console.log(marginValue);
+                /*txtMarginValue -= 300
                 $('.txtslides').animate({'margin-top' : txtMarginValue + 'px'})
+                */
+                switch(marginValue) {
+                    case 0:
+                        $('#slide1').show("slow");
+                        $('#slide2').hide("fast");
+                        $('#slide3').hide("fast");
+                        $('#slide4').hide("fast");
+                        break;
+                    case -600:
+                        $('#slide2').show("slow");
+                        $('#slide1').hide("fast");
+                        $('#slide3').hide("fast");
+                        $('#slide4').hide("fast");
+                        break;
+                    case -1200:
+                        $('#slide3').show("slow");
+                        $('#slide1').hide("fast");
+                        $('#slide2').hide("fast");
+                        $('#slide4').hide("fast");
+                        break;
+                        
+                    case -1800:
+                        $('#slide4').show("slow");
+                        $('#slide1').hide("fast");
+                        $('#slide2').hide("fast");
+                        $('#slide3').hide("fast");
+                        break;
+                    }
             }
         }
     );

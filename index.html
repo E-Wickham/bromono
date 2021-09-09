@@ -37,7 +37,10 @@
             
         </header>
         <main>
-            
+            <div class="socialbox"><i class="fab fa-facebook"></i></div>
+            <div class="socialbox" id="sbox2"><i class="fab fa-twitter"></i></div>
+            <div class="socialbox" id="sbox3"><i class="fab fa-instagram"></i></div>
+
             <div id="jumbotron">
                 <div id="slider-container">
                     <div id="img-slider">
@@ -66,8 +69,8 @@
                     <div id="text-slider">
                           <!--Arrow For menu1-->
                         <div class="txtslider">
-                            <div class="txtslides">
-                                <div class="txtslide">
+                            
+                                <div id="slide1" class="txtslide">
                                     <h4>Space Invaders[a] is a 1978 shoot 'em up arcade game developed by Tomohiro Nishikado. 
                                         It was manufactured and sold by Taito in Japan, and licensed by the Midway division of Bally for overseas distribution. 
                                     </h4> 
@@ -75,7 +78,7 @@
                                             <a href="#">Read More</a> 
                                         </div>
                                 </div>
-                                <div class="txtslide">
+                                <div id="slide2" class="txtslide">
                                     <h4>Extraterrestrial life is hypothetical life which may occur outside Earth and which did not originate on Earth. 
                                         Such life might range from simple prokaryotes (or comparable life forms) to intelligent beings and even sapient beings 
                                     </h4> 
@@ -83,23 +86,21 @@
                                             <a href="#">Read More</a> 
                                         </div>
                                 </div>
-                                <div class="txtslide">
-                                    <h4>Space Invaders[a] is a 1978 shoot 'em up arcade game developed by Tomohiro Nishikado. 
-                                        It was manufactured and sold by Taito in Japan, and licensed by the Midway division of Bally for overseas distribution. 
+                                <div id="slide3" class="txtslide">
+                                    <h4>Super Mario Party is the best Party in two console generations. It's done away with some, but not all, of the slowness 
                                     </h4> 
                                         <div class="read-more-btn"> 
                                             <a href="#">Read More</a> 
                                         </div>
                                 </div>
-                                <div class="txtslide">
-                                    <h4>Extraterrestrial life is hypothetical life which may occur outside Earth and which did not originate on Earth. 
-                                        Such life might range from simple prokaryotes (or comparable life forms) to intelligent beings and even sapient beings 
+                                <div id="slide4" class="txtslide">
+                                    <h4>Digimon World:Next Order is a bright, slow-paced game that intermixes a open-world RPG with monster raising to great success.  
                                     </h4> 
                                         <div class="read-more-btn"> 
                                             <a href="#">Read More</a> 
                                         </div>
                                 </div>
-                            </div>                        
+                                                
                         </div>
                     
                       
@@ -126,45 +127,26 @@
                 </div>
             </div>
         </div>     
-            <div class="socialbox"><i class="fab fa-facebook"></i></div>
-            <div class="socialbox" id="sbox2"><i class="fab fa-twitter"></i></div>
-            <div class="socialbox" id="sbox3"><i class="fab fa-instagram"></i></div>
-            <img id="buildingNear" src="assets/nearbuilding.png" alt="Buildings that are nearby">
+            
+            <div id="building-div">
+            </div>
+
+            <div id="building-img-holder">
+                <img id="buildingNear" src="assets/nearbuilding.png" alt="Buildings that are nearby">
+                <div id="youtube-vid-div">
+                    <div id="youtube-vid">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/grBFMP3HDZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
-    <aside>
-        <div id="featured-vid">
-            <div id="truck"><img src="assets/v-truck.png" alt="a truck from the open source game dev kit warped city"></div>
-            
 
-            <div id="overlap"></div>
-            <div id="bike"><img src="assets/v-yellow.png" alt="a jetbike from the open source game dev kit warped city"></div>
-            <div id="featured-vid-title">
-               
-                <h2>Featured Video</h2>
-                <img id="comet" src="assets/8bitcomet.png" alt="8 bit comet">
-                
-               
-                
-                <div id="video-player">
-                    <video id="realVid" controls width="800">
-                    
-                        <source src="#"   type="video/mp4">
-                    </video>   
-                    
-                </div>
-              <div id="button-holder">
-                <div id="vidbox-flex">
-                    <div class="vidbox" id="vid-play"> ▶ </div>
-                    <div class="vidbox" id="vid-pause"> || </div>
-                </div>    
-              </div>
-              </div>
             <footer id="footer">Copyright 2021 - Eric Wickham</footer>
 
-        </div>
+       
 
-    </aside>
+
     <!--FIREWORKS HTML-->
     <div class="firework" id="sparks">
         <div class="explosion"></div>
